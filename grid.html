@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple CSS Grid Example</title>
+    <style>
+      .child {
+        padding: 10px;
+        background-color: brown;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+        .grid-item {
+            background: #4CAF50;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .grid-item a{
+            text-decoration: none;
+            color:bisque
+        }
+    </style>
+</head>
+<body>
+    <div child="grid"></div>
+        <div child="grid-item"><a href="#">1</a></div>
+        <div child="grid-item"><a href="#">2</a></div>
+        <div child="grid-item"><a href="#">3</a></div>
+        <div child="grid-item"><a href="#">4</a></div>
+        <div child="grid-item"><a href="#">5</a></div>
+        <div child="grid-item"><a href="#">6</a></div>
+    </div>
+</body>
+</html>
